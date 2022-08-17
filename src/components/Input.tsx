@@ -1,12 +1,12 @@
 type Props = {
-  children: string;
+  labelText: string;
   [key: string]: any;
 };
 
-export function Input({ children, ...props }: Props) {
+export function Input({ labelText, ...props }: Props) {
   return (
     <label>
-      {children}
+      {labelText}
       <input {...props} />
     </label>
   );
